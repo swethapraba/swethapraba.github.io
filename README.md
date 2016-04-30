@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Worthy - Free Bootstrap Template
 =======================================================================
 
@@ -42,3 +43,8 @@ Resources
 - Animate CSS by Daniel T. Eden - http://daneden.github.io/animate.css/
 - Isotope Jquery plugin by metafizzy.co - http://isotope.metafizzy.co/
 - Backstrech by Scott Robbin - http://srobbin.com/jquery-plugins/backstretch/
+=======
+# swethapraba.github.io
+Personal Website
+Created using the Worthy Bootstrap Template
+>>>>>>> origin/master
