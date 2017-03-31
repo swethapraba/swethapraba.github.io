@@ -5,7 +5,6 @@ Created using the Worthy Bootstrap Template:
 Fonts
 - Font Awesome by Dave Gandy - http://fortawesome.github.io/Font-Awesome/
 - Google Fonts - http://www.google.com/fonts
-
 Resources
 - Bootstrap Framework by @mdo and @fat - http://getbootstrap.com/
 - jQuery - https://jquery.org/
