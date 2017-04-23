@@ -1,7 +1,9 @@
 # swethapraba.github.io
+
 My personal website can be accessed at swethapraba.com!
 
 Created using the Worthy Bootstrap Template:
+
 Fonts
 - Font Awesome by Dave Gandy - http://fortawesome.github.io/Font-Awesome/
 - Google Fonts - http://www.google.com/fonts
