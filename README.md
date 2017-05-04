@@ -29,6 +29,7 @@ portfolio and personal webpages.
 - Release Date: 13 Nov 2014
 - Author: HtmlCoder (http://htmlcoder.me)
 
+
 - Contact: http://htmlcoder.me/contact
 
 Live Preview: http://www.htmlcoder.me/preview/worthy/v.1.0
