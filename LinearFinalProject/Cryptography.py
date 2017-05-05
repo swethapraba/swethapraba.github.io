@@ -48,7 +48,6 @@ class Cryptography:
         assert len(self.stoa(S)) % 2 == 0
         return Matrix(self.stoa(S)).reshape(len(self.stoa(S)) // 2, 2).transpose()
         #the matrix is returned as a matrix of numbers
-
     def MtoS(self, M):
         """ Turn a 2 x C matrix of numbers into a string S, where len(S) = C*2 """
         lists = []
