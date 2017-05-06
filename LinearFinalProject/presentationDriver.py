@@ -20,55 +20,92 @@ print("TEAM 1: ")
 pprint(team1encryption) ###printing out that matrix just for checking
 
 ###publish team 2's encryption matrix
+team2encryption = Matrix([[3,9],[27,9]]) ##we give them an encryption matrix
 print("TEAM 2: ")
+pprint(team2encryption)
+print()
+###########################
 ioInput = "start"
 while (ioInput != "end"):
 	###ask for which team's message
-	choice = raw_input("Which team would you like to process (1/2)")
-	if choice == 1:
+	choice = input('Which team would you like to process(1/2) ')
+	print()
+	if choice == "1":
 		###if team 1:
-		team1plain = raw_input("What is Team 1's plaintext message? ")
+		team1plain = input("What is Team 1's plaintext message? ")
 		###ask for team 1's original message
-		if team1plain.length%2 != 0:
+		if len(team1plain) %2 != 0:
 			team1plain = team1plain+"X"
 		###test that it is even-length
-		if team1plain.length%2 == 0:
+		if len(team1plain) %2 == 0:
 			###if yes, ask to run the encryption
 			team1ciphertext = encrypt(team1encryption, team1plain, code1) ###this is team 1's encrypted message
 			###print the encrypted text
 			print("'%s' encodes as '%s'" % (team1plain, team1ciphertext)) ###print check
 			print(" using encryption matrix") #### print check
 			pprint(team1encryption) ###printing out that matrix just for checking
-			###print the decrypted text
-			team1decryption = team1encryption.inv_mod(code1.m)
-			print("And %s decrypts to %s" % (team1ciphertext, decrypt(team1decryption,team1ciphertext, code1)))
-			#print("And %s decrypts to %s" % (team1ciphertext, decrypt(team1encryption.inv_mod(code1.m),team1ciphertext, code1)))
-			print("Using decryption matrix:")
-			pprint(team1decryption) ###Matrix([[26,20],[13,25]])
-			#pprint(team1encryption.inv_mod(code1.m))
+			print()
+			#####################
+			revealTeam1 = input('Would you like to view the decryption?(yes/no) ')
+			if revealTeam1 == "yes":
+				###print the decrypted text
+				team1decryption = team1encryption.inv_mod(code1.m) ###Matrix([[26,20],[13,25]])
+				print("Team 1's decryption matrix is:")
+				pprint(team1decryption) ###Matrix([[26,20],[13,25]])
+				#####################################################
+				print("And the ciphertext ( %s ) decrypts to the plaintext ( %s )" % (team1ciphertext, decrypt(team1decryption,team1ciphertext, code1)))
+				print()
+				#DELETE MEprint("And %s decrypts to %s" % (team1ciphertext, decrypt(team1encryption.inv_mod(code1.m),team1ciphertext, code1)))
+				#pprint(team1encryption.inv_mod(code1.m))
+			if revealTeam1 == "no":
+				print()
 
 			###ask to loop back for another team's message
-			forkPoint = raw_input("Do you want to check another team?(yes/no)")
+			forkPoint = input("Do you want to check another team?(yes/no) ")
 			if forkPoint == "yes":
 				pass
 			if forkPoint == "no":
 				break
 				###if no, then ask to quit the program
 
-	if choice == 2:
-		pass
+	if choice == "2":
 		###if team 2:
+		team2plain = input("What is Team 2's plaintext message? ")
 		###ask for team 2's message
+		if len(team2plain) %2 != 0:
+			team2plain = team2plain+"X"
 		###test that it is even-length
-		###if yes, ask to run the encryption
-		###print the encrypted text
-		###print the decrypted text
+		if len(team2plain) %2 == 0:
+			###if yes, ask to run the encryption
+			team2ciphertext = encrypt(team2encryption, team2plain, code1) ###this is team 1's encrypted message
+			###print the encrypted text
+			print("'%s' encodes as '%s'" % (team2plain, team2ciphertext)) ###print check
+			print(" using encryption matrix") #### print check
+			pprint(team2encryption) ###printing out that matrix just for checking
+			print()
+		#####################
+		revealTeam2 = input('Would you like to view the decryption?(yes/no) ')
+		if revealTeam2 == "yes":
+			###print the decrypted text
+			team2decryption = team2encryption.inv_mod(code1.m) ###Matrix([[26,20],[13,25]])
+			print("Team 2's decryption matrix is:")
+			pprint(team2decryption) ###Matrix([[26,20],[13,25]])
+			print("And the ciphertext ( %s ) decrypts to the plaintext ( %s )" % (team1ciphertext, decrypt(team1decryption,team1ciphertext, code1)))
+			print()
+		if revealTeam2 == "no":
+			print()
 		###ask to loop back for another team's message
-		###if no, then ask to quit the program
+		forkPoint = input("Do you want to check another team?(yes/no) ")
+		if forkPoint == "yes":
+			pass
+		if forkPoint == "no":###if no, then ask to quit the program
+			break
 
-###BACKUP - NO I/O
+print()
+print("Thank you for checking out our program!")
+print()
 
-
+####################################################BACKUP - NO I/O######################
 ###ENCRYPTION SIDE
 
 ###TEAM 1
