@@ -18,6 +18,7 @@ Resources
 
 =======================================================================
 Worthy - Free Bootstrap Template
+
 Worthy is a Multipurpose One Page Template based on Bootstrap 3 Framework. 
 You can use it for corporate, business and agency webpages as well as 
 portfolio and personal webpages.
