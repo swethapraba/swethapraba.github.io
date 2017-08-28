@@ -1,5 +1,5 @@
 # swethapraba.github.io
-My personal website can be accessed at swethapraba.com!
+My personal website can be accessed at swethapraba.com! Please pardon the dust; more is coming soon!
 
 Created using the Worthy Bootstrap Template:
 
