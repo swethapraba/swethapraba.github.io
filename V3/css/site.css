@@ -1,0 +1,22 @@
+.standard {
+  margin-top: 2em; /* Add a top margin to avoid content overlay */
+}
+
+.site-name-and-slogan {
+  /*float: left; /**do i actually need this? who knows man**/
+  align-self: left;
+}
+
+.site-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.25em;
+  font-weight: 300;
+  
+  font-color: #008080;
+  margin-top: 1em;
+}
+
+.site-slogan {
+  font-size: 1em;
+  font-color: #008080;
+}

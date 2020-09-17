@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--specify media type-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!--it breaks if you take this out idek-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Swetha Prabakaran</title>
+
+  <link href="css/bootstrap-4.3.1.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css"> <!--for things that apply sitewide-->
+  <link rel="stylesheet" href="css/all.css"> <!--figure out if i can take this out-->
+  <link rel="stylesheet" href="css/main.css"> <!--figure out if i can take this out-->
+  <link rel="stylesheet" href="css/landing.css"> <!--figure out if i can take this out-->
+  <link rel="stylesheet" href="css/ionicons.css">
+</head>
+
+<body class="dy_background " style="margin: 0px; padding: 0px; opacity: 1;"> <!--add standard class-->
+  <!--floating circles-->
+  <div class="area">
+    <ul class="circles" style="opacity: 0.3;">
+      <li class="dy_main-background-gradient"></li>
+      <li class="dy_main-background-gradient"></li>
+      <li class="dy_main-background-gradient"></li>
+      <li class="dy_main-background-gradient"></li>
+      <li class="dy_main-background-gradient"></li>
+    </ul>
+  </div>
+
+  <!--blue wave detail TODO: ADJUST TO FIT WITH PHOTO INFILL-->
+  <div class="bannerpartimg">
+    <!--dark blue rectangle-->
+    <div class="bpbackground dy_main-background-gradient"> </div>
+    <!--light blue shape to make the swell-->
+    <svg viewBox="0 0 751 800" fill="none" xmlns="http://www.w3.org/2000/svg" class="ssvg" style="opacity: 1;">
+      <path class="secsvg dy_bpsvg" d="M468.345 151.675C367.542 10.9319 196.091 68.8357 122.965 115.381C79.4581 248.462 10.3152 540.031 81.8008 641.657C153.286 743.282 328.787 773.394 407.602 775.746L751 800H0V0H751L750.5 303C648.091 344.168 569.148 292.419 468.345 151.675Z"></path>
+    </svg>
+
+    <!--photo - TODO: REPLACE WITH A GOOD PHOTO-->
+    <div class="bpimginner">
+        <img src="img/logo-temp.png" class="bpimgreal">
+    </div>
+
+    <!--white cut away on left side-->
+    <svg viewBox="0 0 751 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="dy_bpsvg" d="M113.233 572.96C49.233 371.742 197.733 97.9294 356.733 0H0V800H750.733C750.733 800 640.233 689.89 453.233 719.164C346.733 730.857 166.325 739.883 113.233 572.96Z"></path>
+    </svg>
+
+  <!--never figured out what this line did--
+      <div class="bpimgoverlay dy_background" style="height: 0%;"></div>-->
+  </div>
+
+  <!--NAVBAR AND HEADER SECTION - SHOULD EVENTUALLY BE IN SHELL FILE -->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container" style="opacity: 1; transform: translateX(0px);">
+
+          <!--TODO: FIX THE LEFT ALIGN AND BRING IT CLOSER TO THE LEFT EDGE. SOME BOOTSTRAP THING-->
+          <div class="site-name-and-slogan">
+              <div class="site-name"><a href="#landing">Swetha Prabakaran</a></div>
+              <div class="site-slogan">Creator, Speaker, Entrepreneur</div>
+          </div>
+
+          <span class="navbar-brand"><a href="#about">About</a></span>
+          <span class="navbar-brand"><a href="#tech">Tech</a></span>
+          <span class="navbar-brand"><a href="#creative">Creative</a></span>
+          <span class="navbar-brand"><a href="#speaking">Speaking</a></span>
+          <span class="navbar-brand"><a href="#accolades">Accolades</a></span>
+          <span class="navbar-brand" color=#FFFFFF><a href="#contact">Contact</a></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-------->
+  <section class="home_banner_area">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-12">
+              <div class="banner_content">
+                <h3 class="dy_text-background-4" style="opacity: 1; transform: scale(1) translateY(0px);">Hello, world. I'm</h3>
+                <h1 class="text-uppercase dy_text" style="opacity: 1; transform: scale(1) translateY(0px);">Swetha</h1>
+                
+                <div class="social-icons"><!--<div class="social_icons my-5">-->
+                  <!--<a target="_blank" href="https://www.instagram.com/swethapraba/">
+                    <i class="ion-social-instagram-outline"></i></a>-->
+                  <a target="_blank" href="https://www.linkedin.com/in/swethapraba/">
+                    <img class="social-icons" src="img/linkedin.png"></i> 
+                  </a>
+                  <a target="_blank" href="https://www.twitter.com/swethapraba/"><i class="ion-social-twitter"></i></a>
+                  <a target="_blank" href="mailto:swetha@swethapraba.com"><i class="ion-email"></i></a>
+
+
+
+                  <!--<  style="transform: scale(1);"><i class="fab fa-facebook-f dy_iconsbg" style="transform: scale(1);"></i></a>
+                  <a target="_blank" href="https://resulux.com/resumax/render/XMQ1WNOLKA1O76R1589947122#" style="transform: scale(1);"><i class="fab fa-instagram dy_iconsbg" style="transform: scale(1);"></i></a>
+                  
+                  <a target="_blank" href="https://resulux.com/resumax/render/XMQ1WNOLKA1O76R1589947122#" "><i class="fab fa-twitter dy_iconsbg" style="transform: scale(1);"></i></a>
+                  <a target="_blank" href="https://resulux.com/resumax/render/XMQ1WNOLKA1O76R1589947122#" style="transform: scale(1);"><i class="fab fa-skype dy_iconsbg" style="transform: scale(1);"></i></a>
+                  -->
+                </div>
+                <!--<a target="_blank" class="primary_btn dy_mainbuttons" href="https://resulux.com/resumax/render/XMQ1WNOLKA1O76R1589947122#" style="opacity: 1; transform: scale(1);">
+                  <span>See my work</span>
+                </a>-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--------->
+
+</body>
+
+
+<!-- saved from url=(0060)https://resulux.com/resumax/render/XMQ1WNOLKA1O76R1589947122 
+   
+
+    
+      <!-- jquery plugins here
+    
+<script src="./jquery-1.11.0.min.js"></script>
+<script src="./iframeResizer.contentWindow.min.js"></script>
+<script>
+
+        // Include to suppress console warnings
+        window.iFrameResizer = {
+
+          // What is allowed to send it messages
+          targetOrigin: '*',
+
+          // Message received from parent
+          onMessage: function (message) { }
+        };
+
+        // child dependency for iframe
+        $(document).ready(function () {
+
+          // get all anchors
+          var $anchors = $("a");
+
+          $anchors.each(function () {
+
+            // create a jquery object
+            var $a = $(this);
+
+            // get its user set href
+            var href = $a.attr('href');
+
+            // If there is a href, check if user set this link to scroll to another page
+            if ( href && href.charAt(0) === '#') {
+              $a.click(function () {
+
+                // remove target which is by default _blank
+                $a.removeAttr("target");
+
+                // create the message to send to the parent, which includes which iframe to scroll to
+                var message = '{ "action":"scroll", "target":"' + href + '"}';
+
+                // send the message to the parent which will do the scrolling
+                window.parentIFrame.sendMessage(message);
+              });
+            }
+          });
+        });
+</script>
+
+    <script src="./bootstrap-4.3.1.min.js"></script>
+    <script src="./anime-3.1.0.min.js"></script>
+    <script src="./header.js"></script>
+  
+<div style="clear: both; display: block; height: 0px;"></div></body></html>

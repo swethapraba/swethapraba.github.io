@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--it breaks if you take this out idek-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Swetha Prabakaran</title>
+
+	<link href="css/bootstrap-4.3.1.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/site.css"> <!--for things that apply sitewide-->
+  	<link rel="stylesheet" href="css/all.css"> <!--figure out if i can take this out-->
+ 	<link rel="stylesheet" href="css/main.css"> <!--figure out if i can take this out-->
+	<link rel="stylesheet" href="css/header.css"> <!--figure out if i can take this out-->
+</head>
+
+<body>
+	<style>
+		iframe 
+		{
+			/* works around an issue in iOS that can prevent the iFrame from sizing correctly */
+            width: 1px;
+            min-width: 100%;
+
+            border: none;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+            float: left;
+            background-color: #FFFFFF !important;
+        }
+		body 
+		{
+			margin: 0;
+			padding: 0;
+
+			/* Set so user will always see background colored */
+			background-color: #FFFFFF !important;
+    	}
+	</style>
+
+	<iframe data-displayorder="0" id="landing" src="landing.html" scrolling="no" style="overflow: hidden; height: 800px;"></iframe>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/iframeResizer.js"></script>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/renderly.js"></script>
+  
+</body>
+</html>
