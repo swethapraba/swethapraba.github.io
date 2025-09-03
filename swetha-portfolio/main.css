@@ -1,0 +1,184 @@
+/* General Rules */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #fffffa;
+  margin: 0;
+  padding: 0;
+}
+
+/** Importing Fonts **/
+
+/* General Sans Regular */
+@font-face {
+  font-family: "GeneralSansRegular";
+  src: url(/fonts/GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf);
+}
+
+/* General Sans Medium */
+@font-face {
+  font-family: "GeneralSansMedium";
+  src: url(/fonts/GeneralSans_Complete/Fonts/OTF/GeneralSans-Medium.otf);
+}
+
+/* Manrope */
+@font-face {
+  font-family: "Manrope";
+  src: url(/fonts/Manrope/static/Manrope-Bold.ttf);
+}
+
+/* All Paragraphs */
+p {
+  font-family: "GeneralSansRegular";
+}
+
+/* All H1 */
+h1 {
+  font-family: "Manrope";
+}
+
+/* Main Container */
+.content-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #fffffa;
+}
+/* Left-side Swetha Img */
+.image-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Right-side Text Container */
+.text-container {
+  padding: 3rem;
+  color: #0c3981;
+}
+
+/* Home Navigation Flex Container */
+.home-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: #f06c9b;
+  font-family: "GeneralSansMedium";
+}
+
+/* Individual Nav Link */
+.nav-item {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.nav-item:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/** 
+
+Hamburger Menu Styling & Behavior 
+
+**/
+
+/* Hide default checkbox */
+#menu__toggle {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Hamburger button */
+.menu__btn {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  width: 0.5rem;
+  height: 1rem;
+  cursor: pointer;
+  z-index: 1100;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/* Hamburger bars */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #0c3981;
+  transition: 0.3s ease;
+  content: "";
+}
+
+.menu__btn > span::before {
+  top: -10px;
+}
+
+.menu__btn > span::after {
+  top: 10px;
+}
+
+/* Rotate into X when active */
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Slide-out nav */
+.menu__box {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10rem 2rem;
+  list-style: none;
+  background-color: #fffffa;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  transition: right 0.5s ease;
+  z-index: 1000;
+  text-align: right;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  right: 0;
+}
+
+/* Nav links inside menu */
+.menu__item {
+  color: #f06c9b;
+  font-size: 3rem;
+  text-decoration: none;
+  font-family: "GeneralSansMedium";
+}
+
+.menu__item:hover {
+  text-decoration: underline;
+  text-underline-offset: 13px;
+}
