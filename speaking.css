@@ -64,7 +64,6 @@ header {
   animation: fadeIn 1s ease;
   position: fixed;
   width: 100%;
-  /* These properties will be set by the .scrolled-nav class */
   transition: background-color 0.2s ease, border-bottom 0.2s ease;
 }
 .scrolled-nav {
@@ -73,38 +72,38 @@ header {
 }
 
 /* Main Quote Box */
-.quote {
+/* .quote {
   border: 2px solid #0c3981;
   margin: 6rem 6rem;
   padding: 5rem;
   border-radius: 15px;
   box-shadow: 20px 20px #f06c9b;
-}
+} */
 
 /* BlockQuote Testimonial Text Container */
-blockquote {
+/* blockquote {
   color: #0c3981;
   border: none;
   position: relative;
   font-family: "GeneralSansRegular", Times, serif;
-}
+} */
 
 /* Actual Quote */
-blockquote h3 {
+/* blockquote h3 {
   font-size: 20px;
   padding: 2rem;
   font-weight: bold;
-}
+} */
 
 /* Person & Company Name */
-blockquote p {
+/* blockquote p {
   padding-left: 2rem;
   font-size: 15px;
   font-weight: bold;
-}
+} */
 
 /* Opening Quotation */
-blockquote h3:before {
+/* blockquote h3:before {
   content: open-quote;
   font-weight: bold;
   font-size: 150px;
@@ -112,10 +111,10 @@ blockquote h3:before {
   position: absolute;
   top: -5rem;
   left: -4rem;
-}
+} */
 
 /* Closing Quotation */
-blockquote h3:after {
+/* blockquote h3:after {
   content: close-quote;
   font-weight: bold;
   font-size: 150px;
@@ -123,7 +122,7 @@ blockquote h3:after {
   position: absolute;
   bottom: -11rem;
   right: -4rem;
-}
+} */
 
 /* Image Fade In Animation */
 @keyframes fadeIn {

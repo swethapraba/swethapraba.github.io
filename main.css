@@ -54,13 +54,6 @@ h4 {
   font-family: "Manrope";
 }
 
-.social-links-hamburger {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-}
-
 /* Main Container */
 .content-section {
   min-height: 100vh;
