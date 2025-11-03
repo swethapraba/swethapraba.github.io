@@ -10,6 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.social-links-hamburger {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
 header {
   margin: 0;
   padding: 0;
@@ -196,22 +203,22 @@ blockquote h3:after {
 
 /* CAROUSEL IMG */
 .card-img-top {
-  height: 300px;
+  height: 250px;
   overflow: hidden;
-  border-radius: 20px 20px 0 0; /* optional, matches your cards */
+  border-radius: 20px 20px 0 0;
 }
 
 .card-img-top img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills without distortion */
-  object-position: center; /* keeps the focus centered */
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
 /* CAROUSEL PARAGRAPH TEXT */
 .card-body {
-  display: flex; /* This is the key to making the inner content fill space */
+  display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
@@ -291,6 +298,10 @@ blockquote h3:after {
   color: #f06c9b;
   border: 2px solid #f06c9b;
 }
+.book-swetha.footer-visible {
+  background-color: #fffffa;
+  color: #f06c9b;
+}
 
 /* Overall container for skills */
 .skills-container {
@@ -369,7 +380,7 @@ blockquote h3:after {
 }
 .card2:hover {
   transform: translate(-5px, -5px);
-  box-shadow: 10px 10px 0 #0c3981;
+  /* box-shadow: 10px 10px 0 #0c3981; */
 }
 
 .card2__title {
@@ -462,23 +473,6 @@ blockquote h3:after {
   right: 0;
 }
 
-/* Filter Btn Flex Container */
-/* .btn-category-container {
-  display: flex;
-  justify-content: center;
-  margin: -2rem 6rem;
-  gap: 1rem;
-} */
-
-/* Individual Btn  */
-/* .category-btn {
-  color: #0c3981;
-  background-color: #fffffa;
-  border: 2px solid #0c3981;
-  border-radius: 50px;
-  padding: 7px 30px;
-} */
-
 /* Archives Container */
 .archives-container {
   margin-top: 7rem;
@@ -498,7 +492,7 @@ blockquote h3:after {
 }
 
 #archive-card:hover {
-  box-shadow: 10px 10px rgb(222, 222, 222);
+  /* box-shadow: 10px 10px rgb(222, 222, 222); */
   transform: translate(-5px, -5px);
 }
 
@@ -625,7 +619,6 @@ blockquote h3:after {
   .what-you-get {
     border-radius: 125px 125px 0 0;
   }
-
   .keynote-header {
     padding-bottom: 1rem;
     margin-bottom: 4rem;
@@ -656,6 +649,11 @@ blockquote h3:after {
   }
   .past-talks {
     margin: 0;
+  }
+  .creds-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
   }
 }
 

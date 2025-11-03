@@ -15,3 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// INVERTS BOOK SWETHA BTN COLOR WHEN INSIDE FOOTER
+document.addEventListener("DOMContentLoaded", function () {
+  const bookButton = document.querySelector(".book-swetha");
+  const footer = document.querySelector("footer");
+
+  if (!bookButton || !footer) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          bookButton.classList.add("footer-visible");
+        } else {
+          bookButton.classList.remove("footer-visible");
+        }
+      });
+    },
+    {
+      root: null, // viewport
+      threshold: 0.2, // adjust sensitivity if needed
+    }
+  );
+
+  observer.observe(footer);
+});
