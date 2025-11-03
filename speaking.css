@@ -1,0 +1,703 @@
+* {
+  box-sizing: border-box;
+}
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+  animation: fadeIn 1s ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* match image height */
+  overflow: hidden;
+}
+
+.header-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 30% center;
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Header text overlay */
+.header-text {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  right: 5%;
+  text-align: center;
+  color: #f06c9b;
+  z-index: 5;
+  font-family: "GeneralSansRegular", Times, serif;
+  animation: fadeIn 1.5s ease;
+}
+
+.header-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.header-text p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation Container */
+.home-nav-container {
+  justify-content: end;
+  top: 0;
+  right: 0;
+  padding: 2rem 4rem;
+  z-index: 10;
+  animation: fadeIn 1s ease;
+  position: fixed;
+  width: 100%;
+  /* These properties will be set by the .scrolled-nav class */
+  transition: background-color 0.2s ease, border-bottom 0.2s ease;
+}
+.scrolled-nav {
+  background-color: #fffffa;
+  border-bottom: 1.5px solid #f06c9b;
+}
+
+/* Main Quote Box */
+.quote {
+  border: 2px solid #0c3981;
+  margin: 6rem 6rem;
+  padding: 5rem;
+  border-radius: 15px;
+  box-shadow: 20px 20px #f06c9b;
+}
+
+/* BlockQuote Testimonial Text Container */
+blockquote {
+  color: #0c3981;
+  border: none;
+  position: relative;
+  font-family: "GeneralSansRegular", Times, serif;
+}
+
+/* Actual Quote */
+blockquote h3 {
+  font-size: 20px;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+/* Person & Company Name */
+blockquote p {
+  padding-left: 2rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Opening Quotation */
+blockquote h3:before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 150px;
+  color: #f06c9b;
+  position: absolute;
+  top: -5rem;
+  left: -4rem;
+}
+
+/* Closing Quotation */
+blockquote h3:after {
+  content: close-quote;
+  font-weight: bold;
+  font-size: 150px;
+  color: #f06c9b;
+  position: absolute;
+  bottom: -11rem;
+  right: -4rem;
+}
+
+/* Image Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below its final position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at its natural position */
+  }
+}
+
+/**** 
+
+      SPOTLIGHTS SECTION 
+
+*****/
+
+/* Spotlights Container */
+.spotlights {
+  margin: 6rem 6rem;
+}
+.spotlights h1 {
+  margin-bottom: 3rem;
+  color: #0c3981;
+  display: inline-block;
+  position: relative;
+}
+.spotlights h1::after {
+  content: ".";
+  color: #f06c9b;
+  position: absolute;
+  right: 0;
+}
+
+/* IMG Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  opacity: 1; /* Make arrows always visible */
+}
+
+/* Custom styling for carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(88%) sepia(90%) saturate(2250%) hue-rotate(200deg)
+    brightness(94%) contrast(92%);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c3981'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+/* Positions the arrows in the white space */
+.carousel-control-prev {
+  left: -50px;
+}
+.carousel-control-next {
+  right: -50px;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.card h5 {
+  color: #0c3981;
+}
+
+/* CAROUSEL IMG */
+.card-img-top {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0; /* optional, matches your cards */
+}
+
+.card-img-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills without distortion */
+  object-position: center; /* keeps the focus centered */
+  display: block;
+}
+
+/* CAROUSEL PARAGRAPH TEXT */
+.card-body {
+  display: flex; /* This is the key to making the inner content fill space */
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-text {
+  color: #0c3981;
+  flex-grow: 1; /* This pushes the title and content up, ensuring consistency */
+}
+
+/* small accessibility focus styles */
+.carousel-btn:focus {
+  outline: 2px solid rgba(12, 57, 129, 0.18);
+  border-radius: 6px;
+}
+
+#graceHopper-logo {
+  transform: scale(0.9); /* zooms out slightly (90% of original size) */
+  object-fit: contain; /* ensures no cropping */
+  object-position: center;
+}
+
+/****** 
+
+      WHAT YOU GET SECTION 
+
+******/
+
+/* What You Get Container */
+.what-you-get {
+  background-color: #eeefe7;
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 175px 175px 0 0;
+}
+
+/* What you get Container */
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 7rem 6rem;
+  padding-top: 6rem;
+  /* background-color: lightblue; */
+}
+
+.title-container h1 {
+  color: #0c3981;
+  display: inline-block;
+  position: relative;
+  /* background-color: lightgreen; */
+}
+
+/* Pink Period */
+.what-you-get h1::after {
+  content: ".";
+  color: #f06c9b;
+  position: absolute;
+  right: 0;
+}
+
+/* Book Swetha Btn */
+.book-swetha {
+  padding: 15px 25px;
+  border-radius: 100px;
+  border: 2px solid #f06c9b;
+  color: #fffffa;
+  background-color: #f06c9b;
+  font-family: "GeneralSansMedium", Times, serif;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 11;
+  text-decoration: none;
+}
+.book-swetha:hover {
+  background-color: #fffffa;
+  color: #f06c9b;
+  border: 2px solid #f06c9b;
+}
+
+/* Overall container for skills */
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-top: -2rem;
+  color: #0c3981;
+}
+
+.skills-container p {
+  text-align: justify;
+  /* background-color: lightblue; */
+}
+
+/* Individual Skill Container */
+.individual-skill {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f06c9b; */
+}
+
+.individual-skill h4 {
+  font-size: 17px;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* space between icon and text */
+  margin-bottom: 2rem;
+  color: #0c3981;
+  /* background-color: lightgreen; */
+}
+
+.individual-skill svg {
+  width: 40px; /* standardize all icon sizes */
+  height: 40px;
+  flex-shrink: 0; /* prevents squishing */
+}
+
+/****** 
+
+      KEYNOTE SECTION 
+
+******/
+
+/* Keynote topics title */
+.keynote-header {
+  color: #0c3981;
+  text-align: center;
+  margin-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+/* Keynote Container */
+.keynote-container {
+  color: #0c3981;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* KEYNOTE CARDS */
+
+/* From Uiverse.io by 0xnihilism */
+.card2 {
+  width: 350px;
+  padding: 20px;
+  background: #fffffa;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card2:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 10px 10px 0 #0c3981;
+}
+
+.card2__title {
+  font-size: 20px;
+  font-weight: 900;
+  color: #0c3981;
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  font-family: "Gloria";
+}
+.card2__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 3px;
+  background-color: #0c3981;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.card2:hover .card2__title::after {
+  transform: translateX(0);
+}
+
+/* Card Paragraph */
+.card2__content {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #0c3981;
+  margin-bottom: 20px;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+
+.glitch {
+  animation: glitch 0.3s infinite;
+}
+
+/****** 
+
+      PAST TALKS SECTION 
+
+******/
+
+/* Past Talks Container */
+.past-talks {
+  margin: 2rem 6rem;
+}
+/* Past Talks Title */
+.past-talks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -2rem;
+  margin-top: 4rem;
+}
+
+.past-talks-container h1 {
+  color: #0c3981;
+  display: inline-block;
+  position: relative;
+  /* background-color: lightgreen; */
+}
+
+/* Pink period on Past talks */
+.past-talks h1::after {
+  content: ".";
+  color: #f06c9b;
+  position: absolute;
+  right: 0;
+}
+
+/* Filter Btn Flex Container */
+/* .btn-category-container {
+  display: flex;
+  justify-content: center;
+  margin: -2rem 6rem;
+  gap: 1rem;
+} */
+
+/* Individual Btn  */
+/* .category-btn {
+  color: #0c3981;
+  background-color: #fffffa;
+  border: 2px solid #0c3981;
+  border-radius: 50px;
+  padding: 7px 30px;
+} */
+
+/* Archives Container */
+.archives-container {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* background-color: lightblue; */
+}
+
+/* Overrides Bootstrap Card Design */
+#archive-card {
+  color: #0c3981;
+  font-family: "GeneralSansMedium";
+  background-color: #fffffa;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#archive-card:hover {
+  box-shadow: 10px 10px rgb(222, 222, 222);
+  transform: translate(-5px, -5px);
+}
+
+.footer-container {
+  background-color: #f06c9b;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  color: #eeefe7;
+}
+
+.social-links {
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eeefe7;
+}
+
+#mail:hover,
+#ig:hover,
+#linkedin:hover {
+  scale: 1.5;
+  transition: 0.5s ease-in-out;
+}
+
+.creds-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  margin-top: 2rem;
+  color: #eeefe7;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 1rem;
+}
+
+/****** MEDIA QUERIES ******/
+
+/* Less than 1250 */
+@media (max-width: 1250px) {
+  .quote {
+    margin: 6rem 6rem;
+  }
+}
+
+/* Less than 1150 */
+@media (max-width: 1150px) {
+  .keynote-container {
+    margin: 0 2.5rem;
+  }
+
+  .archives-container {
+    margin: 7rem 2rem;
+  }
+}
+
+/* Less than 1050 */
+@media (max-width: 1050px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 0;
+    margin-top: -3rem;
+  }
+  .individual-skill h4 {
+    font-size: 140%;
+  }
+  .individual-skill p {
+    font-size: 120%;
+  }
+  .keynote-header {
+    font-size: 190%;
+  }
+  .keynote-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    margin: 0 7rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .keynote-container {
+    justify-content: center;
+    margin: 0 5rem;
+  }
+  .past-talks h1 {
+    font-size: 270%;
+  }
+}
+
+/* Hide arrows when cards start to stack on smaller screens */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+/* Less than 750px */
+@media (max-width: 750px) {
+  .quote {
+    margin: 4rem 6rem;
+    padding: 3rem;
+  }
+  blockquote h3:before {
+    font-size: 120px;
+    top: -2rem;
+    left: -1rem;
+  }
+  blockquote h3:after {
+    font-size: 120px;
+    bottom: -6.5rem;
+    right: -1rem;
+  }
+  blockquote {
+    padding-left: 1.5rem;
+  }
+  .what-you-get {
+    border-radius: 125px 125px 0 0;
+  }
+
+  .keynote-header {
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+/* Less than 650px */
+@media (max-width: 650px) {
+  .quote {
+    margin: 3rem 3rem;
+    padding: 2rem;
+  }
+  .keynote-container {
+    margin-top: 1rem;
+  }
+  .what-you-get {
+    padding-bottom: 3rem;
+    border: none;
+  }
+  .title-container {
+    padding-top: 4rem;
+  }
+  .skills-container {
+    margin-top: -4rem;
+  }
+  .past-talks-container h1 {
+    text-wrap: nowrap;
+    margin-bottom: -1rem;
+  }
+  .past-talks {
+    margin: 0;
+  }
+}
+
+/* Less than 650px */
+@media (max-width: 550px) {
+  .quote {
+    margin: 3rem 3rem;
+    padding: 1rem;
+  }
+  .spotlights h1 {
+    font-size: 250%;
+  }
+  .title-container {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+  .title-container h1 {
+    font-size: 250%;
+    transition: 0.5s;
+  }
+  .keynote-header {
+    text-align: left;
+    margin: 3rem 5.5rem;
+    font-size: 220%;
+    transition: 0.5s;
+  }
+
+  /* Space between skill header & paragraph */
+  .skills-container p {
+    margin-top: -1.5rem;
+  }
+
+  /* Space between each Skill */
+  .skills-container {
+    gap: 1.5rem;
+  }
+
+  .individual-skill h4 {
+    text-wrap: nowrap;
+  }
+  .title-container {
+    padding-bottom: 3rem;
+    font-size: 110%;
+  }
+}

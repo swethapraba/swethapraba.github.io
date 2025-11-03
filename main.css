@@ -20,28 +20,37 @@ body {
 /* General Sans Regular */
 @font-face {
   font-family: "GeneralSansRegular";
-  src: url(/fonts/GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf);
+  src: url(fonts/GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf);
 }
 
 /* General Sans Medium */
 @font-face {
   font-family: "GeneralSansMedium";
-  src: url(/fonts/GeneralSans_Complete/Fonts/OTF/GeneralSans-Medium.otf);
+  src: url(fonts/GeneralSans_Complete/Fonts/OTF/GeneralSans-Medium.otf);
 }
 
 /* Manrope */
 @font-face {
   font-family: "Manrope";
-  src: url(/fonts/Manrope/static/Manrope-Bold.ttf);
+  src: url(fonts/Manrope/static/Manrope-Bold.ttf);
 }
 
-/* All Paragraphs */
+/* Gloria */
+@font-face {
+  font-family: "Gloria";
+  src: url(fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
+}
+
+/* GenSansReg for All Paragraphs */
 p {
   font-family: "GeneralSansRegular";
 }
 
-/* All H1 */
-h1 {
+/* Manrope for All Headers */
+h1,
+h2,
+h3,
+h4 {
   font-family: "Manrope";
 }
 
@@ -81,7 +90,7 @@ h1 {
 }
 .nav-item:hover {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: wavy;
 }
 
 /** 

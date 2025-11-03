@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Speaking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="speaking.css">
+        <link rel="stylesheet" href="main.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <style> 
+    body{
+        background-color: #fffffa;
+    }
+            /* Nav Link color Pink */
+            .nav-item a{
+                color: #f06c9b;
+            }
+             /* ALL Link hover behavior */
+            a:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+    </style>
+    <body>
+        <!-- HEADER SECTION: NAV LINKS + MAIN IMG -->
+        <header>
+            <!-- Desktop Nav -->
+            <div class="home-nav-container d-none d-md-flex">
+                <div class="nav-item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="speaking.html">Speaking</a>
+                </div>
+                <!-- <div class="nav-item">About</div>
+                <div class="nav-item">Contact</div> -->
+            </div>
+            <!-- Mobile Hamburger -->
+            <div class="hamburger-menu d-md-none">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li>
+                        <a class="menu__item" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="speaking.html">Speaking</a>
+                    </li>
+                    <!-- <li>
+                        <a class="menu__item" href="#">About</a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="menu__item" href="#">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <img src="images/speaking-header-min.jpg" class="header-img">
+            <!-- Add this overlay text -->
+            <div class="header-text">
+                <h3>"The panel standout was Swetha…composed well beyond her years."</h3>
+                <p>Education Week</p>
+            </div>
+        </header>
+        <!-- **** QUOTE SECTION **** -->
+        <!-- <section>
+            <div class="quote">
+                <div class="container">
+                    <blockquote>
+                        <h3>The panel standout was Swetha…composed well beyond her years.</h3>
+                        <p>Education Week</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section> -->
+        <!-- **** SPOTLIGHTS SECTION **** -->
+        <section class="spotlights">
+            <h1>
+                spotlights.
+            </h1>
+            <!-- SPOTLIGHTS IMAGE CAROUSEL -->
+            <div id="cardCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-3 d-flex">
+                            <div class="col-md-4 d-flex">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="images/speaking/apple-fed.webp">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Apple Federal Credit Union</h5>
+                                        <p class="card-text">
+                                            Swetha at the podium, wearing the white dress with pink florals
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="images/speaking/bampfa-logo.png">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Berkeley Art Museum/Pacific Film Archive (BAMPFA)</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur. Quam tellus mattis massa felis aenean.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="images/speaking/gracehopper-logo.jpg" id="graceHopper-logo">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Grace Hopper Celebration for Women in Computing</h5>
+                                        <p class="card-text">Different slide content goes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <div class="row g-3 d-flex">
+                            <div class="col-md-4 d-flex">
+                                <div class="card h-100">
+                                    <div class="card-img-top"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">More Content</h5>
+                                        <p class="card-text">You can add more cards here and it will slide one set at a time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#cardCarousel"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button> -->
+                <!-- <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#cardCarousel"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+            <div class="d-md-none">
+                <div class="row g-3">
+                    <div class="col-md-4 col-sm-6 col-12 d-flex">
+                        <div class="card h-100">
+                            <div class="card-img-top"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Title Goes Here</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur. Quam tellus mattis massa felis aenean.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 d-flex">
+                        <div class="card h-100">
+                            <div class="card-img-top"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Title Goes Here</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur. Quam tellus mattis massa felis aenean.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 d-flex">
+                        <div class="card h-100">
+                            <div class="card-img-top"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Title Goes Here</h5>
+                                <p class="card-text">Different slide content goes here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 d-flex">
+                        <div class="card h-100">
+                            <div class="card-img-top"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">More Content</h5>
+                                <p class="card-text">You can add more cards here and it will slide one set at a time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- **** WHAT YOU GET SECTION **** -->
+        <section class="what-you-get">
+            <div class="title-container">
+                <h1>what you get.</h1>
+                <a href="mailto:someone@example.com" class="book-swetha">Book Swetha</a>
+            </div>
+            <div class="skills-container">
+                <div class="individual-skill">
+                    <h4>
+                        <svg
+                            fill="#f06c9b"
+                            width="54px"
+                            height="44px"
+                            viewBox="0 0 64.00 64.00"
+                            xmlns="http://www.w3.org/2000/svg"
+                            stroke="#f06c9b"
+                            stroke-width="1.3439999999999999"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="a"></g>
+                                <g id="b">
+                                    <path d="M55,15c0-3.3086-2.6914-6-6-6s-6,2.6914-6,6c0,2.902,2.0709,5.3283,4.8124,5.881-2.8929,14.9008-7.5906,30.5594-10.3656,30.5594-1.3521,0-3.3027-5.0781-4.8701-9.1582l-.2197-.5713c-.6377-1.6572-1.1924-3.459-1.7295-5.2012-1.4668-4.7627-2.626-8.5234-5.1221-8.5234-2.718,0-6.7,9.1346-9.0449,15.2009-.4684-.1178-.9559-.1873-1.4604-.1873-3.3086,0-6,2.6914-6,6s2.6914,6,6,6,6-2.6914,6-6c0-2.0912-1.0768-3.9337-2.7036-5.008,2.5555-6.5809,5.9831-13.5909,7.2089-14.0057,1.0195,0,2.3384,4.2803,3.2109,7.1123,.5464,1.7744,1.1118,3.6094,1.7739,5.3311l.2192,.5693c2.415,6.2881,4.0107,10.4414,6.7373,10.4414,5.6334,0,10.7479-23.9513,12.3929-32.5062,2.9114-.4105,5.1603-2.9113,5.1603-5.9342ZM15,53c-2.2056,0-4-1.7939-4-4s1.7944-4,4-4,4,1.7939,4,4-1.7944,4-4,4ZM49,19c-2.2056,0-4-1.7939-4-4s1.7944-4,4-4,4,1.7939,4,4-1.7944,4-4,4Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        Cutting-Edge Insights
+                    </h4>
+                    <p>Swetha leverages her expertise on emerging trends in technology to help audiences cultivate forward-thinking, innovative cultures within their organizations–across all industries.</p>
+                </div>
+                <div class="individual-skill">
+                    <h4>
+                        <svg
+                            width="64px"
+                            height="44px"
+                            viewBox="0 0 400 400"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M53.7305 284.709C61.0815 276.913 67.7438 268.349 75.3163 260.764C84.3596 251.7 103.183 232.078 105.382 222.911C113.232 190.195 92.0389 146.347 115.405 117.08C130.216 98.5321 133.171 156.412 137.762 147.209C146.133 130.431 153.056 91.6187 167.828 86.1811C186.444 79.3288 181.978 101.549 180.165 112.445"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M313 318C295.974 291.335 279.274 263.042 262.265 240.5C258.311 235.261 233.632 234.056 226.627 232.059C196.853 223.569 169.869 209.254 167.106 188.933C164.343 168.613 216.485 195.581 214.232 193.554C198.933 179.787 170.503 140.042 175.096 134.886C186.268 122.343 216.914 165.063 219.656 165.063C221.504 165.063 216.094 156.39 215.782 155.822C211.381 147.805 193.403 119.325 201.837 108.847C210.656 97.8864 235.369 139.169 237.475 141.961C239.709 144.923 243.674 154.902 243.674 151.202C243.674 144.723 238.102 137.271 237.475 130.408C237.223 127.665 238.073 99.4301 248.32 109.618C254.738 115.998 259.647 133.498 262.265 141.961C263.228 145.064 263.057 153.497 265.366 151.202C267.115 149.461 264.644 107.362 279.312 121.938C289.829 132.395 299.11 181.495 301.779 197.404C306.527 225.726 328.311 257.128 345.939 279.031"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    opacity="0.503384"
+                                    d="M165.174 117.7C156.954 120.309 136.13 148.461 143.62 157.85C143.977 158.299 150.547 160.296 150.547 157.85C150.547 142.139 116.58 189.91 127.452 202.632C129.837 205.421 138.505 210.703 142.079 211.898C143.166 212.261 145.97 209.54 145.157 210.353C138.06 217.474 143.681 229.023 152.087 230.429C160.395 231.819 172.023 219.116 172.871 220.391C174.553 222.92 171.482 226.951 173.641 229.656C183.895 242.51 197.57 231.774 201.355 220.391"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    opacity="0.503384"
+                                    d="M198.373 84.1491C204.218 77.2848 211.831 67 222.237 67C231.278 67 225.073 84.8875 227.626 83.4031C231.829 80.9609 234.14 74.9124 239.173 72.9633C248.805 69.233 266.752 85.001 259.19 90.8585"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    opacity="0.503384"
+                                    d="M304.982 181.992C312.091 177.092 325.448 173.202 326.547 185.891C327.857 200.993 309.606 196.766 312.42 196.029C319.408 194.195 322.255 207.546 318.367 211.623C311.532 218.791 301.265 198.426 301.265 192.91"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M156.191 241C136.382 264.829 130.095 278.279 104 315.558"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </g>
+                        </svg>
+                        Inclusive Leader
+                    </h4>
+                    <p>Swetha leaves audiences with actionable takeaways for fostering inclusive and accessible high-performing teams.</p>
+                </div>
+                <div class="individual-skill">
+                    <h4>
+                        <svg
+                            width="64px"
+                            height="64px"
+                            viewBox="0 0 400 400"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M176.242 87C165.723 123.31 157.363 150.817 151.163 169.521C144.963 188.225 135.575 233.941 123 306.669"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M229.484 87C215.816 150.892 206.859 191.733 202.613 209.523C196.244 236.209 182.029 302.488 182.029 306.669"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    opacity="0.503384"
+                                    d="M170.454 88.248C206.72 229.469 224.853 302.276 224.853 306.669"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    opacity="0.503384"
+                                    d="M229.483 93.2402C241.138 148.328 249.047 185.508 253.211 204.782C270.038 282.676 276.938 312.909 276.938 312.909"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M160.037 87.624C172.597 87.624 183.1 87.624 191.545 87.624C199.99 87.624 213.408 87.624 231.797 87.624"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M171.612 129.436C195.363 124.998 209.252 123.519 213.279 124.998"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M156.565 169.376C184.873 169.376 200.692 170.208 204.02 171.872"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M142.676 211.812C157.683 211.812 192.074 212.548 197.075 214.309"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M132.26 255.496C141.482 255.496 149.454 255.496 156.177 255.496C162.901 255.496 174.605 256.744 191.289 259.241"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M123 290.443C130.146 290.443 137.58 290.443 145.302 290.443C153.024 290.443 163.337 292.524 176.242 296.684"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </g>
+                        </svg>
+                        High-Profile Experience
+                    </h4>
+                    <p>With experience speaking to a range of audiences from educators to government officials, Swetha brings a high level of credibility and a polished, professional presence to any corporate event.</p>
+                </div>
+                <div class="individual-skill">
+                    <h4>
+                        <svg
+                            width="44px"
+                            height="44px"
+                            viewBox="0 0 400 400"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            stroke="#f06c9b"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M55.5166 247.224C127.172 205.014 143.913 338.234 67.7512 327.332C33.1333 322.372 28.288 274.263 55.5166 258.666"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M301.817 249.972C310.238 243.179 323.68 236.049 335.02 240.126C349.207 245.223 360.613 258.485 361.584 272.94C367.186 355.946 243.701 319.554 296.835 256.533"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M91.9619 277.125C106.653 261.384 116.928 239.716 133.718 226.253C138.177 222.679 281.328 209.557 283.541 210.669C300.58 219.203 318.869 269.274 329.393 286.148"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M279.478 222.743C264.532 241.759 251.457 262.439 237.658 282.101"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M125.688 215.998C135.594 251.377 131.385 271.085 143.082 280.078C154.388 288.769 180.952 287.431 226.866 281.615"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M228.905 268.781C278.051 265.402 217.754 313.906 228.08 275.01"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M119.314 156.641C111.595 192.72 109.634 201.663 111.242 208.575C116.858 232.716 174.23 172.829 147.835 272.658"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M105.6 104.609C149.099 45.5241 175.571 139.289 119.304 144.454C102.063 146.034 100.455 105.818 109.632 98.1006"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M117.594 168.91C137.639 174.252 157.731 169.299 176.952 159.719"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M198.708 84.8014C225.156 47.825 273.393 107.363 239.497 131.733C213.157 150.672 182.233 121.153 194.6 95.4677"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M205.281 160.688C200.775 173.911 195.159 198.744 193.14 207.904"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M193.14 208.258C265.701 198.034 255.011 193.079 246.21 268.611"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M205.281 160.688C226.151 169.554 258.217 173.073 268.686 167.331"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M272.733 156.641C291.896 179.002 287.113 195.388 279.868 222.743"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M193.14 210.602C199.646 230.714 210.778 249.32 218.771 268.611"
+                                    stroke="#f06c9b"
+                                    stroke-opacity="0.9"
+                                    stroke-width="16"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </g>
+                        </svg>
+                        A Real Partner
+                    </h4>
+                    <p>With her signature warmth and humor, Swetha loves working closely with clients to ensure that her content meets the exact needs of your group.</p>
+                </div>
+            </div>
+            <!-- **** KEYNOTE TOPICS **** -->
+            <h3 class="keynote-header">keynote topics.</h3>
+            <div class="keynote-container d-flex align-items-stretch">
+                <div class="card2">
+                    <span class="card2__title">Generative Art for Generational Change</span>
+                    <p class="card2__content">
+                        Discover how to supercharge your technical and organizational innovation using modern dance’s best-kept secrets. Available in both standard keynote and workshop formats.
+                    </p>
+                </div>
+                <div class="card2">
+                    <span class="card2__title">It Takes Tech to Tango</span>
+                    <p class="card2__content">
+                        It starts like a bad joke: a dancer and an engineer walk into a room. But what emerges isn’t a punchline–it’s a powerful culture shift at the intersection of art, technology, and innovation.
+                    </p>
+                </div>
+                <div class="card2">
+                    <span class="card2__title">
+                        Everybody Code Now!
+                    </span>
+                    <p class="card2__content">
+                        Swetha provides a powerful message on the importance of expanding computer science education and how to equip the next generation with the skills needed to drive technological progress.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- **** PAST TALKS SECTION **** -->
+        <section class="past-talks">
+            <div class="past-talks-container">
+                <h1>past talks.</h1>
+            </div>
+            <!-- Filters for Past Talks -->
+            <!-- <div class="btn-category-container">
+                <button class="category-btn">tech</button>
+                <button class="category-btn">art</button>
+                <button class="category-btn">miscellaneous</button>
+            </div> -->
+            <div class="archives-container">
+                <!-- ARCHIVE #1 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/bampfa-logo.png" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Shifting Live Dance to the Screen</h5>
+                        <p class="card-text">Spoke on panel during premiere of 2 dance films at BAMPFA</p>
+                    </div>
+                </div>
+                <!-- ARCHIVE #2 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/gracehopper-logo.jpg" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">It Takes Tech to Tango: An Introduction to DanceTech</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <!-- ARCHIVE #3 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/microsoft-logo.jpg" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Spoke on panel during conference with est. 200,000 attendees (virtual due to COVID-19)</p>
+                    </div>
+                </div>
+                <!-- Archive #4 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/ucberk-logo.png" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">CS 39: Computer Science & Rule-Based Generative Art</h5>
+                        <p class="card-text">Gave 30 minute lecture on parallels between the Laban-Bartenieff Movement Analysis</p>
+                    </div>
+                </div>
+                <!-- Archive #5 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/google-logo.webp" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i>We Are GWE</i>
+                            Summit
+                        </h5>
+                        <p class="card-text">1 of 7 chosen to give 15-minute talk to nearly 500 Google interns from 18 offices</p>
+                    </div>
+                </div>
+                <!-- Archive #6 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/dept-state.png" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Global Ties Conference
+                        </h5>
+                        <p class="card-text">Spoke on ‘Dream STEAM Teams’ panel on the importance of gender diversity in STEM fields and how to address diversity through education initiatives</p>
+                    </div>
+                </div>
+                <!-- Archive #7 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/whitehouse-logo.jpg" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Obama White House Champions of Change Reunion
+                        </h5>
+                        <p class="card-text">Spoke alongside US Chief Technology Officer Megan Smith to 400+ attendees</p>
+                    </div>
+                </div>
+                <!-- Archive #8 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/columbia-university-logo.png" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            IgniteSTEM Conference
+                        </h5>
+                        <p class="card-text">Talk for 150+ NYC area educators about strategies for expanding Computer Science education</p>
+                    </div>
+                </div>
+                <!-- Archive #9 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/aauw-logo.png" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Virginia State Conference
+                        </h5>
+                        <p class="card-text">Invited to speak about importance of encouraging girls to pursue STEM at a young age</p>
+                    </div>
+                </div>
+                <!-- Archive #10 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/google-logo.webp" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Future of Innovation Panel
+                        </h5>
+                        <p class="card-text">Spoke on panel alongside Code.org COO and Senior Policy Advisor to President Obama</p>
+                    </div>
+                </div>
+                <!-- Archive #11 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/virginiagov-logo.png" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Virginia Governor’s Diwali Dinner
+                        </h5>
+                        <p class="card-text">Spoke at dinner with Virginia Governor Terry McAuliffe about CS education expansion work</p>
+                    </div>
+                </div>
+                <!-- Archive #11 -->
+                <div class="card" id="archive-card" style="width: 18rem;">
+                    <img src="images/speaking/whitehouse-logo.jpg" class="card-img-top" alt="bampfa-logo">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            White House Champions of Change Event
+                        </h5>
+                        <p class="card-text">Participated on panel moderated by MTV about efforts to empower girls in technology</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/swethapraba" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #eeefe7;" id="linkedin"></i>
+                </a>
+                <a href="mailto:someone@example.com">
+                    <i class="fa-solid fa-envelope fa-xl" style="color: #eeefe7;" id="mail"></i>
+                </a>
+                <a href="https://www.instagram.com/swethapraba/?hl=en" target="_blank">
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #eeefe7;" id="ig"></i>
+                </a>
+            </div>
+            <div class="creds-container">
+                <p>This website was designed and developed by Anna Rizvi & Swetha Prabakaran</p>
+            </div>
+            <span class="copyright">
+                <i class="fa-regular fa-copyright fa-sm" style="color: #eeefe7;"></i>
+                Swetha Prabakaran 2025
+            </span>
+        </div>
+    </footer>
+    <!-- Linking My JS -->
+    <script src="speaking.js"></script>
+    <!-- Linking Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
