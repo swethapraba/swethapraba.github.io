@@ -71,59 +71,6 @@ header {
   border-bottom: 1.5px solid #f06c9b;
 }
 
-/* Main Quote Box */
-/* .quote {
-  border: 2px solid #0c3981;
-  margin: 6rem 6rem;
-  padding: 5rem;
-  border-radius: 15px;
-  box-shadow: 20px 20px #f06c9b;
-} */
-
-/* BlockQuote Testimonial Text Container */
-/* blockquote {
-  color: #0c3981;
-  border: none;
-  position: relative;
-  font-family: "GeneralSansRegular", Times, serif;
-} */
-
-/* Actual Quote */
-/* blockquote h3 {
-  font-size: 20px;
-  padding: 2rem;
-  font-weight: bold;
-} */
-
-/* Person & Company Name */
-/* blockquote p {
-  padding-left: 2rem;
-  font-size: 15px;
-  font-weight: bold;
-} */
-
-/* Opening Quotation */
-/* blockquote h3:before {
-  content: open-quote;
-  font-weight: bold;
-  font-size: 150px;
-  color: #f06c9b;
-  position: absolute;
-  top: -5rem;
-  left: -4rem;
-} */
-
-/* Closing Quotation */
-/* blockquote h3:after {
-  content: close-quote;
-  font-weight: bold;
-  font-size: 150px;
-  color: #f06c9b;
-  position: absolute;
-  bottom: -11rem;
-  right: -4rem;
-} */
-
 /* Image Fade In Animation */
 @keyframes fadeIn {
   0% {
@@ -489,19 +436,37 @@ header {
 }
 
 .footer-container {
-  background-color: #f06c9b;
-  margin-top: 3.5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2rem;
-  color: #eeefe7;
+  display: flex;
+  justify-content: center;
+  margin: 8rem 10.5rem 1rem;
+  /* padding-top: 3rem; */
+  color: #f06c9b;
+  /* background-color: rgb(219, 255, 182); */
+  gap: 5rem;
+  font-size: 93%;
 }
 
+.copyright {
+  font-family: "GeneralSansRegular";
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  /* background-color: lightblue; */
+}
 .social-links {
-  gap: 1.5rem;
+  /* background-color: lightblue; */
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #eeefe7;
+  gap: 1rem;
+}
+.creds-container {
+  /* background-color: rgb(160, 95, 156); */
+  text-wrap: wrap;
 }
 
 #mail:hover,
@@ -511,28 +476,20 @@ header {
   transition: 0.5s ease-in-out;
 }
 
-.creds-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
-  margin-top: 2rem;
-  color: #eeefe7;
-}
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-  margin-top: 1rem;
-}
-
 /****** MEDIA QUERIES ******/
 
 /* Less than 1250 */
 @media (max-width: 1250px) {
   .quote {
     margin: 6rem 6rem;
+  }
+  .footer-container {
+    margin: 8rem 6.5rem 1rem;
+    /* background-color: lightblue; */
+  }
+  .social-links {
+    /* background-color: lightblue; */
+    padding-right: 7rem;
   }
 }
 
@@ -544,6 +501,13 @@ header {
 
   .archives-container {
     margin: 7rem 2rem;
+  }
+  .footer-container {
+    margin: 10rem 3rem 1rem;
+  }
+  .social-links {
+    /* background-color: lightblue; */
+    padding-right: 10rem;
   }
 }
 
@@ -642,14 +606,21 @@ header {
   .past-talks {
     margin: 0;
   }
-  .creds-container {
-    margin-left: 3rem;
-    margin-right: 3rem;
+  /* Stacks footer items */
+  .footer-container {
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: center;
+    font-size: 105%;
+  }
+  .social-links {
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
   }
 }
 
-/* Less than 650px */
+/* Less than 550px */
 @media (max-width: 550px) {
   .quote {
     margin: 3rem 3rem;
