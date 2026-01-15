@@ -440,7 +440,7 @@ header {
   justify-content: center;
   margin: 8rem 10.5rem 1rem;
   color: #f06c9b;
-  /* background-color: rgb(219, 255, 182); */
+  background-color: rgb(219, 255, 182);
   gap: 5rem;
   font-size: 93%;
 }
