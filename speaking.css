@@ -439,7 +439,6 @@ header {
   display: flex;
   justify-content: center;
   margin: 8rem 10.5rem 1rem;
-  /* padding-top: 3rem; */
   color: #f06c9b;
   /* background-color: rgb(219, 255, 182); */
   gap: 5rem;
@@ -485,11 +484,6 @@ header {
   }
   .footer-container {
     margin: 8rem 6.5rem 1rem;
-    /* background-color: lightblue; */
-  }
-  .social-links {
-    /* background-color: lightblue; */
-    padding-right: 7rem;
   }
 }
 
@@ -498,16 +492,11 @@ header {
   .keynote-container {
     margin: 0 2.5rem;
   }
-
   .archives-container {
     margin: 7rem 2rem;
   }
   .footer-container {
-    margin: 10rem 3rem 1rem;
-  }
-  .social-links {
-    /* background-color: lightblue; */
-    padding-right: 10rem;
+    margin: 7rem 3rem 1rem;
   }
 }
 
@@ -542,6 +531,9 @@ header {
   }
   .past-talks h1 {
     font-size: 270%;
+  }
+  .footer-container {
+    margin-top: -2rem;
   }
 }
 
@@ -612,11 +604,6 @@ header {
     gap: 0.5rem;
     text-align: center;
     font-size: 105%;
-  }
-  .social-links {
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
   }
 }
 
